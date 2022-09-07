@@ -59,7 +59,7 @@ article{
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
-    column-gap: 30px;
+    column-gap: 10px;
 }
 .pro-img{
     height: 350px;
@@ -154,7 +154,7 @@ hr{
     height: 2px;
     width: 30%;
     background-color: aqua;
-    margin: 2% auto;
+    margin: 10% auto;
 }
 hr:hover{
     width: 80%;
@@ -267,6 +267,12 @@ progress {
     word-spacing: 0em;
 }
 /*=========================== FOOTER =================================*/
+.last-hr{
+    height: 2px;
+    width: 30%;
+    background-color: aqua;
+    margin: 0% auto;
+}
 footer{
     padding:5%;
     display: flex;
