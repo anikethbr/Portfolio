@@ -1,381 +1,253 @@
-html,body{
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 480vh;
-}
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-/*===========================  NAV =====================================*/
-nav{
-    height: 65px;
-    width: 100%;
-    /* position:sticky; */
-    position: fixed;
-    top: 0;
-}
-article{
-    height: 65px;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-.nav-item{
-    flex: 1;
-    text-align: center;
-    font-size: 25px;
-    font-family: sans-serif;
-    text-shadow: 2px 2px  rgb(157, 53, 237);
-}
-.nav-item:hover{
-    transition-delay: 0.5s;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    font-size: xx-large;
-}
-.nav-link{
-    text-decoration:none;
-    color: white;
-}
-.nav-link:hover{
-    color: rgb(2, 249, 183);
-    text-shadow: 0.5px 0.5px  white;
-}
-/*===========================  MAIN =====================================*/
-#main{
-    margin: 10% 5% 5% 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    column-gap: 10px;
-}
-.pro-img{
-    height: 350px;
-    width: 100%;
-    /* border: 2px solid white; */
-    border: 6px solid rgb(157, 53, 237);
-    border-radius: 50%;
-}
-.pro-img:hover{
-    border: 6px solid rgb(237, 53, 228);
-}
-.text-container{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    row-gap: 0;
-}
-.text-container>h1{
-    font-family: 'Poppins', sans-serif;
-    /* font-family: 'Sacramento',sans-serif; */
-    padding: 0;
-    color: white;
-    text-shadow: 6px 6px  rgb(255, 23, 155);
-    /* color:#fd0963  #09fdd9*/
-    font-size: 100px;
-    font-weight: 900;
-    text-align: center;
-    /* text-shadow: 6px 6px  black; */
-    /* color: #e74581; */
-    /* color: #de6161; rgb(4, 247, 174) rgb(0, 255, 140) */
-    /* font-size: 72px;
-    background: -webkit-linear-gradient(#de6161,#2657eb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black; */
-    /* color: transparent;
-    text-align: center;
-    animation: effect 1s linear infinite; */
-    /* -webkit-text-stroke: 0.2px rgb(0, 80, 94); */
-    /* color: white; */
-    margin: 0%;
-}
-.text-container>h1:hover{
-    text-shadow: 6px 6px  rgb(157, 53, 237);
-}
+<!DOCTYPE html>
+<html lang="en">
 
-@keyframes effect {
-    0% {
-        background: linear-gradient(
-            #e74b1c, #005617, );
-        -webkit-background-clip: text;
-    }
-    25% {
-        background: linear-gradient(-45deg,
-        #f464ac,#79d3f1);
-        -webkit-background-clip: text;
-    }
-    50% {
-        background: linear-gradient(-45deg,
-        #f0a2c9,#10e48f);
-        -webkit-background-clip: text;
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
 
-    75% {
-        background: linear-gradient(-45deg,
-            #33ccff,  #ff99cc);
-        -webkit-background-clip: text;
-    }
-    100% {
-        background: linear-gradient(-45deg,
-            #f0f264,  #36c8f5);
-        -webkit-background-clip: text;
-    }
-}
-.text-container>h2{
-    font-family: 'Sacramento',cursive;
-    font-size: 60px;
-    font-weight: 900;
-    text-align: center;
-    color: white;
-    margin: 0;
-    padding:2% 0;
-    text-shadow: 3.5px 3.5px  rgb(48, 74, 244);
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@100;400;600;700&family=Poppins&family=Sacramento&family=Ubuntu&display=swap"
+        rel="stylesheet">
 
-}
-.text-container>h2:hover{
-    text-shadow: 2.5px 2.5px  rgb(53, 237, 176);
-}
-hr{
-    height: 2px;
-    width: 30%;
-    background-color: aqua;
-    margin: 10% auto;
-}
-hr:hover{
-    width: 80%;
-    transition-delay: 0.5s;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-}
-/*===========================  ABOUT =====================================*/
-.abt-description{
-    margin: 0% 10%;
-}
-.abt-description > p{
-    font-family: 'Ubuntu',monospace;
-    font-size: 25px;
-    font-weight: 600;
-    color: white;
-    letter-spacing: 1px;
-    word-spacing: 0.5em;
-}
-input[name="resume"]{
-    height: 50px;
-    width: 50px;
-}
-.res-txt{
-    font-family: 'Ubuntu',sans-serif;
-    font-size: 40px;
-    font-weight: 900;
-    color: white;
-    text-shadow: 2.5px 2.5px  rgb(67, 244, 120);
-}
-.resume>p{
-    text-align: center;
-}
+<body>
+    <section id="home"></section>
+    <!-- navigation -->
+    <nav>
+        <article>
+            <div class="nav-item"><a href="#home" class="nav-link">Home</a></div>
+            <div class="nav-item"><a href="#about" class="nav-link">About</a></div>
+            <div class="nav-item"><a href="#skills" class="nav-link">Skills</a></div>
+            <div class="nav-item"><a href="#projects" class="nav-link">Projects</a></div>
+            <div class="nav-item"><a href="#footer" class="nav-link">Contact</a></div>
+        </article>
+    </nav>
 
-/*===========================  SKILLS =====================================*/
-h3{
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
-    font-size: 70px;
-    text-shadow: 4.5px 4.5px 4px rgb(246, 122, 21);
-}
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-}
-.card{
-    display: flex;
-    align-items: center;
-    gap:20px;
-    /* border: 1px solid black; */
-}
-.img-card{
-    height: 120px;
-    width: fit-content;
-}
-/*Progress bar styling*/
-progress {
-    height: 25px;
-    width: 300px;
-}
+    <!-- main -->
+    <section id="main">
+        <div>
+            <img src="./image/anikethBr.jpg" class="pro-img" alt="profile">
+        </div>
+        <div class="text-container">
+            <h1>Aniketh B R</h1>
+            <h2>Web Developer</h2>
+        </div>
+    </section>
+    <hr>
+
+    <!-- about -->
+    <!-- https://drive.google.com/file/d/1bQgtuPX8-gQFdq5SFs7rjfYExQbvoxmX/view?usp=sharing -->
+    <section id="about">
+        <div>
+            <h3>About</h3>
+        </div>
+        <div class="abt-description">
+            <p>I am Aniketh B R, a web developer, a programmer.An Inquistive-natured person who loves exploring routes
+                that I've never come across. One of my favorite ways to learn is to teach. I am currently pursuing my
+                Bachelor's degree in Computer Science at Canara Engineering College, Mangalore.</p>
+
+            <p>Ever since I was a kid, Computers have fascinated me and have driven my passion and craze for them.
+                Learning new things on a daily basis has always been my priority. I studied languages, algorithms built
+                up my technicality, leadership skills, and much more. There's certainly yet more to learn, yet more
+                problems to solve, and yet more to build.</p>
+        </div>
+        <div class="resume">
+            <p><span class="res-txt">Check out my Resume : </span>
+                <a href="https://drive.google.com/file/d/1bQgtuPX8-gQFdq5SFs7rjfYExQbvoxmX/view?usp=sharing"><input name="resume" type="image" src="./image/dwlnd.png" alt="download" /></a>
+            </p>
+            
+        </div>
+    </section>
+    <hr>
 
 
-/*===========================  PROJECTS =====================================*/
-.cards1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    row-gap: 30px;
-}
-.card2{
-    padding: 30px;
-    color: white;
-    align-items: center;
-    text-align: center;
-    /* border: 1px solid black; */
-    height: 350px;
-    width: 480px;
-    border:4px solid aqua;
-    border-radius: 20%;
-}
-.card2:hover{
-    border:4px solid rgb(94, 0, 217);
-    transition-delay: 0.5s;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    transform: rotate(10deg);
-}
-.card2>h1{
-    margin: 0;
-    font-size: 2em;
-    font-family: 'Ubuntu', sans-serif;
-    text-shadow: 2.5px 2.5px 2px rgb(77, 11, 232);
-}
-.card2 li{
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 1.5em;
-}
-.card2 p{
-    text-align: center;
-    font-family: 'Merriweather', sans-serif;
-    font-weight: 700;
-    font-size: 1em;
-    word-spacing: 1em;
-}
-.card2 span{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.5em;
-    word-spacing: 0em;
-}
-/*=========================== FOOTER =================================*/
-.last-hr{
-    height: 2px;
-    width: 30%;
-    background-color: aqua;
-    margin: 5% auto;
-}
-footer{
-    padding:5%;
-    display: flex;
-    justify-content: center;
-}
-.cpy{
-    color: white;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-i{
-    color: white;
-    border: 1px solid white;
-    padding: 20px;
-    border-radius: 50%;
-}
-i:hover{
-    transition-delay: 0s;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out; 
-    transform: scale(1.9);
-}
-td:hover{
-    transition-delay: 0s;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out; 
-    transform: rotate(360deg);
-}
-/*=========================== RESPONSIVE =================================*/
-@media screen and (max-width: 513px){
-    progress{
-        height: 25px;
-        width: 200px;
-    }
-    .nav-item{
-        font-size: 18px;
-    }
-    .pro-img{
-        height: 200px;
-        width: 100%;
-    }
-    .text-container>h1{
-        font-size: 60px;
-        text-shadow: 3px 3px  rgb(255, 23, 155);
-
-    }
-    .text-container>h2{
-        font-size: 40px;
-        text-shadow: 2.5px 2.5px  rgb(48, 74, 244);
-    }
-
-    h3{
-        font-size: 40px;
-        text-shadow: 2.5px 2.5px 2px rgb(246, 122, 21);
-    }
-
-    .abt-description > p{
-        font-size: 18px;
-    }
-
-    .res-txt{
-        font-size: 25px;
-        text-shadow: 1.5px 1.5px  rgb(67, 244, 120);
-    }
-
-    input[name="resume"]{
-        height: 30px;
-        width: 30px;
-    }
-
-    .img-card{
-        height: 80px;
-        width: fit-content;
-    }
-}
+    <!-- skills -->
+    <section id="skills">
+        <div>
+            <h3>Skills</h3>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="skill-img">
+                    <img class="img-card" src="./image/c.png" alt="">
+                </div>
+                <div class="skill-info">
+                    <progress value="95" max="100"></progress>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skill-img">
+                    <img class="img-card" src="./image/cpp.png" alt="">
+                </div>
+                <div class="skill-info">
+                    <progress value="95" max="100"></progress>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skill-img">
+                    <img class="img-card" src="./image/python.png" alt="">
+                </div>
+                <div class="skill-info">
+                    <progress value="95" max="100"></progress>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skill-img">
+                    <img class="img-card" src="./image/java1.png" alt="">
+                </div>
+                <div class="skill-info">
+                    <progress value="95" max="100"></progress>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skill-img">
+                    <img class="img-card" src="./image/mysql.png" alt="">
+                </div>
+                <div class="skill-info">
+                    <progress value="95" max="100"></progress>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skill-img">
+                    <img class="img-card" src="./image/php.png" alt="">
+                </div>
+                <div class="skill-info">
+                    <progress value="95" max="100"></progress>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skill-img">
+                    <img class="img-card" src="./image/html.png" alt="">
+                </div>
+                <div class="skill-info">
+                    <progress value="95" max="100"></progress>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skill-img">
+                    <img class="img-card" src="./image/css1.png" alt="">
+                </div>
+                <div class="skill-info">
+                    <progress value="95" max="100"></progress>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skill-img">
+                    <img class="img-card" src="./image/js1.png" alt="">
+                </div>
+                <div class="skill-info">
+                    <progress value="95" max="100"></progress>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skill-img">
+                    <img class="img-card" src="./image/nodeJS.png" alt="">
+                </div>
+                <div class="skill-info">
+                    <progress value="95" max="100"></progress>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skill-img">
+                    <img class="img-card" src="./image/express.png" alt="">
+                </div>
+                <div class="skill-info">
+                    <progress value="95" max="100"></progress>
+                </div>
+            </div>
+            <div class="card">
+                <div class="skill-img">
+                    <img class="img-card" src="./image/Bootsrap.png" alt="">
+                </div>
+                <div class="skill-info">
+                    <progress value="95" max="100"></progress>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
 
 
+    <!-- Projects -->
+    <section id="projects">
+        <div>
+            <h3>Projects</h3>
+        </div>
+        <div class="cards1">
+
+            <div class="card2">
+                <h1>Get Weather</h1>
+                <ul>
+                    <li>Fetches Weather at a particular location.</li>
+                    <li>Uses OpenWeatherMap API to fetch weather.</li>
+                </ul>
+                <a href="https://github.com/anikethbr/Get-Weather"> <input type="image" src="./image/GitHub.png"
+                        height="40" width="40" /></a>&emsp;
+                <a href="https://tinyurl.com/AnikethbrWeatherAPI"><input type="image" src="./image/link.png" height="40"
+                        width="40" /></a>
+                <p><span>Tech Stack :</span> HTML | CSS | Boostrap | JavaScript | nodeJS | ExpressJs </p>
+            </div>
+
+            <div class="card2">
+                <h1>Fit Me</h1>
+                <ul>
+                    <li>Full fledged Workout Application.</li>
+                    <li>In Built BMI calculator to measure body obsesity level.</li>
+                </ul>
+                <a href="https://github.com/anikethbr/Fit-me"><input type="image" src="./image/GitHub.png" height="40"
+                        width="40" /></a>
+                <p><span>Tech Stack :</span> Kotlin | XML</p>
+            </div>
 
 
-@media screen and (max-width: 449px){
-    .card2{
+            <div class="card2">
+                <h1>Railway Management System</h1>
+                <ul>
+                    <li>Facilitates online ticket booking.</li>
+                    <li>Provides various provision for admin to manage train, add staff etc.</li>
+                </ul>
+                <a href="https://github.com/anikethbr/Railway-Management-System"><input type="image"
+                        src="./image/GitHub.png" height="40" width="40" /></a>
+                <p><span>Tech Stack :</span> HTML | CSS | Boostrap | JavaScript | PHP | MySQL </p>
+            </div>
 
-        height: 380px;
-        width: 480px;
-    }
-}
-@media screen and (max-width: 627px){
-    article{
-        width: 100%;
-    }
-    #projects{
-        margin: 0 5%;
-    }
-    .card2{
-        height: auto;
-    }
-}
-@media screen and (min-width: 1026px){
-    #main,#skills,#projects,#about{
-        margin-bottom: 170px;
-    }
-}
+
+            <div class="card2">
+                <h1>Connect Six</h1>
+                <ul>
+                    <li>Desktop Application Game.</li>
+                    <li>Interactive and Responsive UI.</li>
+                </ul>
+                <a href="https://github.com/anikethbr/Connect-6-game-using-JavaFx"><input type="image"
+                        src="./image/GitHub.png" height="40" width="40" /></a>
+                <p><span>Tech Stack:</span> JavaFX&emsp;|&emsp;XML </p>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/a4e2abdcac.js" crossorigin="anonymous"></script>
+</body>
+<hr class="last-hr">
+<footer id="footer">
+    <div>
+        <table cellspacing="30">
+            <tr>
+                
+                <td><a href="https://twitter.com/Aniketh_2002"><i class="social-icon fab fa-twitter"></i></a></td>
+                <td><a href="https://www.facebook.com/Anikethrao009/"><i class="social-icon fab fa-facebook-f"></i></a></td>
+                <td><a href="https://www.linkedin.com/in/aniketh-b-r-a1ab611b1/"><i class="fa fa-linkedin"></i></a></td>
+                <td><a href="mailto:anikethbr73@gmail.com"><i class="social-icon fas fa-envelope"></i></a></td>
+                
+                <!-- <i class="social-icon fab fa-instagram"></i> -->
+            </tr>
+        </table>
+        <p class="cpy">©Copyright Aniketh B R</p>
+    </div>
+</footer>
+
+</html>
