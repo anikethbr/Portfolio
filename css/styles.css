@@ -55,7 +55,7 @@ article{
 }
 /*===========================  MAIN =====================================*/
 #main{
-    margin: 5%;
+    margin: 10% 5% 5% 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
