@@ -35,7 +35,7 @@ article{
 .nav-item{
     flex: 1;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5em;
     font-family: sans-serif;
     text-shadow: 2px 2px  rgb(157, 53, 237);
 }
@@ -62,7 +62,7 @@ article{
     column-gap: 30px;
 }
 .pro-img{
-    height: 350px;
+    height: 50vh;
     width: 100%;
     /* border: 2px solid white; */
     border: 6px solid rgb(157, 53, 237);
@@ -85,7 +85,7 @@ article{
     color: white;
     text-shadow: 6px 6px  rgb(255, 23, 155);
     /* color:#fd0963  #09fdd9*/
-    font-size: 100px;
+    font-size: 6.5em;
     font-weight: 900;
     text-align: center;
     /* text-shadow: 6px 6px  black; */
@@ -138,7 +138,7 @@ article{
 }
 .text-container>h2{
     font-family: 'Sacramento',cursive;
-    font-size: 60px;
+    font-size: 4em;
     font-weight: 900;
     text-align: center;
     color: white;
