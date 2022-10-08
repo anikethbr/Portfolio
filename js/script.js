@@ -9,3 +9,6 @@ $(document).ready(function(){
         }
     })
 });
+function getDate(){
+    return new Date().getFullYear().toString();
+}
