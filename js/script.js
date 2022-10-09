@@ -1,14 +1,8 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if(this.scrollY > 220){
-            $('nav').addClass("sticky");
-            $('span').addClass('changeColor');
-        }else{
-            $('nav').removeClass("sticky");
-            $('span').removeClass('changeColor');
-        }
-    })
+$(document).ready(function() {
+    var typed = new Typed(".typing", {
+        strings: ["Web Developer","Programmer","Full stack developer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
 });
-function getDate(){
-    return new Date().getFullYear().toString();
-}

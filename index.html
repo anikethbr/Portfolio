@@ -6,43 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aniketh B R</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@100;400;600;700&family=Poppins&family=Sacramento&family=Ubuntu&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="./image/icon.ico">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=McLaren&family=Merriweather&family=Montserrat&family=Poppins&family=Roboto:wght@300;400&family=Sacramento&family=Titillium+Web:wght@300;400;600&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
 <body>
-    <section id="home"></section>
-    <!-- navigation -->
-    <nav>
-        <article>
-            <div class="nav-item"><a href="#home" class="nav-link"><span>Home</span></a></div>
-            <div class="nav-item"><a href="#about" class="nav-link"><span>About</span></a></div>
-            <div class="nav-item"><a href="#skills" class="nav-link"><span>Skills</span></a></div>
-            <div class="nav-item"><a href="#projects" class="nav-link"><span>Projects</span></a></div>
-            <div class="nav-item"><a href="#footer" class="nav-link"><span>Contact</span></a></div>
-        </article>
+    <nav class="navbar sticky-top navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#Home"><span class="navbar-name">Aniketh <span class="navbar-name-segment">B R</span></span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <!-- main -->
-    <section id="main">
-        <div>
-            <img src="./image/anikethBr.jpg" class="pro-img" alt="profile">
+
+    <!-- HOME -->
+    <section id="Home">
+        <div class="image-container">
+            <img src="./image/anikethBr3.png" class="pro-img" alt="profile">
         </div>
         <div class="text-container">
-            <h1>Aniketh B R</h1>
-            <h2>Web Developer</h2>
-        </div>
+            <h2 class="greet">Hey!</h2>
+            <h1 class="introduce">I'm <span class="name">Aniketh B R</span></h1>
+            <h2 class="description-txt">And I'm a <span class="typing"></span></h2>
+        </div>        
     </section>
-    <hr>
 
-    <!-- about -->
+
+    <!-- About -->
     <section id="about">
         <div>
             <h3>About</h3>
+            <hr>
         </div>
         <div class="abt-description">
             <p>I am Aniketh B R, a web developer, a programmer.An Inquistive-natured person who loves exploring routes
@@ -56,141 +75,143 @@
         </div>
         <div class="resume">
             <p><span class="res-txt">Check out my Resume : </span>
-                <a href="https://drive.google.com/file/d/1rL-l2pwbMwRvI_eBkbhEXYAMNuEW3BQc/view?usp=sharing"><input name="resume" type="image" src="./image/dwlnd.png" alt="download" /></a>
+                <div class="res-link">
+                    <a href="./assets/Aniketh B R - RESUME.pdf">
+                        <button class="btn res-dwnld">Download Resume</button>
+                    </a>
+                </div>
             </p>
-            
         </div>
     </section>
-    <hr>
 
-
-    <!-- skills -->
+        <!-- skills -->
     <section id="skills">
         <div>
             <h3>Skills</h3>
+            <hr>
         </div>
         <div class="cards">
             <div class="card">
                 <div class="skill-img">
                     <img class="img-card" src="./image/c.png" alt="">
                 </div>
-                <div class="skill-info">
-                    <progress value="95" max="100"></progress>
+                <div class="progress percent">
+                    <div class="progress-bar " role="progressbar" style="width: 95%;background-color:#3f0071;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div class="card">
                 <div class="skill-img">
                     <img class="img-card" src="./image/cpp.png" alt="">
                 </div>
-                <div class="skill-info">
-                    <progress value="92" max="100"></progress>
+                <div class="progress percent">
+                    <div class="progress-bar " role="progressbar" style="width: 85%;background-color:#3f0071;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div class="card">
                 <div class="skill-img">
                     <img class="img-card" src="./image/python.png" alt="">
                 </div>
-                <div class="skill-info">
-                    <progress value="96" max="100"></progress>
+                <div class="progress percent">
+                    <div class="progress-bar " role="progressbar" style="width: 80%;background-color:#3f0071;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div class="card">
                 <div class="skill-img">
                     <img class="img-card" src="./image/java1.png" alt="">
                 </div>
-                <div class="skill-info">
-                    <progress value="95" max="100"></progress>
+                <div class="progress percent">
+                    <div class="progress-bar " role="progressbar" style="width: 80%;background-color:#3f0071;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div class="card">
                 <div class="skill-img">
                     <img class="img-card" src="./image/mysql.png" alt="">
                 </div>
-                <div class="skill-info">
-                    <progress value="98" max="100"></progress>
+                <div class="progress percent">
+                    <div class="progress-bar " role="progressbar" style="width: 95%;background-color:#3f0071;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div class="card">
                 <div class="skill-img">
                     <img class="img-card" src="./image/php.png" alt="">
                 </div>
-                <div class="skill-info">
-                    <progress value="85" max="100"></progress>
+                <div class="progress percent">
+                    <div class="progress-bar " role="progressbar" style="width: 70%;background-color:#3f0071;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div class="card">
                 <div class="skill-img">
                     <img class="img-card" src="./image/html.png" alt="">
                 </div>
-                <div class="skill-info">
-                    <progress value="98" max="100"></progress>
+                <div class="progress percent">
+                    <div class="progress-bar " role="progressbar" style="width: 95%;background-color:#3f0071;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div class="card">
                 <div class="skill-img">
                     <img class="img-card" src="./image/css1.png" alt="">
                 </div>
-                <div class="skill-info">
-                    <progress value="98" max="100"></progress>
+                <div class="progress percent">
+                    <div class="progress-bar " role="progressbar" style="width: 95%;background-color:#3f0071;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div class="card">
                 <div class="skill-img">
                     <img class="img-card" src="./image/js1.png" alt="">
                 </div>
-                <div class="skill-info">
-                    <progress value="95" max="100"></progress>
+                <div class="progress percent">
+                    <div class="progress-bar " role="progressbar" style="width: 85%;background-color:#3f0071;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div class="card">
                 <div class="skill-img">
                     <img class="img-card" src="./image/nodeJS.png" alt="">
                 </div>
-                <div class="skill-info">
-                    <progress value="85" max="100"></progress>
+                <div class="progress percent">
+                    <div class="progress-bar " role="progressbar" style="width: 80%;background-color:#3f0071;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div class="card">
                 <div class="skill-img">
                     <img class="img-card" src="./image/express.png" alt="">
                 </div>
-                <div class="skill-info">
-                    <progress value="90" max="100"></progress>
+                <div class="progress percent">
+                    <div class="progress-bar " role="progressbar" style="width: 80%;background-color:#3f0071;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div class="card">
                 <div class="skill-img">
                     <img class="img-card" src="./image/Bootsrap.png" alt="">
                 </div>
-                <div class="skill-info">
-                    <progress value="90" max="100"></progress>
+                <div class="progress percent">
+                    <div class="progress-bar " role="progressbar" style="width: 90%;background-color:#3f0071;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div class="card">
                 <div class="skill-img">
                     <img class="img-card" src="./image/React.png" alt="">
                 </div>
-                <div class="skill-info">
-                    <progress value="80" max="100"></progress>
+                <div class="progress percent">
+                    <div class="progress-bar " role="progressbar" style="width: 70%;background-color:#3f0071;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
             <div class="card">
                 <div class="skill-img">
                     <img class="img-card" src="./image/mongo.png" alt="">
                 </div>
-                <div class="skill-info">
-                    <progress value="80" max="100"></progress>
+                <div class="progress percent">
+                    <div class="progress-bar " role="progressbar" style="width: 75%;background-color:#3f0071;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
         </div>
     </section>
-    <hr>
 
 
     <!-- Projects -->
     <section id="projects">
         <div>
             <h3>Projects</h3>
+            <hr>
         </div>
         <div class="cards1">
 
@@ -198,12 +219,14 @@
                 <h1>Get Weather</h1>
                 <ul>
                     <li>Fetches Weather at a particular location.</li>
+                    <li>Interactive and Responsive UI.</li>
                     <li>Uses OpenWeatherMap API to fetch weather.</li>
                 </ul>
+                <div class="project-links">
                 <a href="https://github.com/anikethbr/Get-Weather"> <input type="image" src="./image/GitHub.png"
                         height="40" width="40" /></a>&emsp;
                 <a href="https://tinyurl.com/AnikethbrWeatherAPI"><input type="image" src="./image/link.png" height="40"
-                        width="40" /></a>
+                        width="40" /></a></div>
                 <p><span>Tech Stack :</span> HTML | CSS | Boostrap | JavaScript | nodeJS | ExpressJs </p>
             </div>
 
@@ -212,9 +235,10 @@
                 <ul>
                     <li>Full fledged Workout Application.</li>
                     <li>In Built BMI calculator to measure body obsesity level.</li>
+                    <li>Keeps track of Workout progress.</li>
                 </ul>
-                <a href="https://github.com/anikethbr/Fit-me"><input type="image" src="./image/GitHub.png" height="40"
-                        width="40" /></a>
+                <div class="project-links"><a href="https://github.com/anikethbr/Fit-me"><input type="image" src="./image/GitHub.png" height="40"
+                        width="40" /></a></div>
                 <p><span>Tech Stack :</span> Kotlin | XML</p>
             </div>
 
@@ -225,8 +249,8 @@
                     <li>Facilitates online ticket booking.</li>
                     <li>Provides various provision for admin to manage train, add staff etc.</li>
                 </ul>
-                <a href="https://github.com/anikethbr/Railway-Management-System"><input type="image"
-                        src="./image/GitHub.png" height="40" width="40" /></a>
+                <div class="project-links"><a href="https://github.com/anikethbr/Railway-Management-System"><input type="image"
+                        src="./image/GitHub.png" height="40" width="40" /></a></div>
                 <p><span>Tech Stack :</span> HTML | CSS | Boostrap | JavaScript | PHP | MySQL </p>
             </div>
 
@@ -234,25 +258,33 @@
             <div class="card2">
                 <h1>Web Messenger</h1>
                 <ul>
-                    <li>Real time chat application.</li>
-                    <li>Interactive and Responsive UI.</li>
+                    <li>Real time message application using internet.</li>
+                    <li>Allows users to join lobby using invitation codes.</li>
+                    <li>Allows mutiple users to join and share messages.</li>
                 </ul>
-                <a href="https://github.com/anikethbr/Web-Chat"><input type="image"
-                        src="./image/GitHub.png" height="40" width="40" /></a>
-                <a href="https://super-cool-site-by-anikethbr73-gmail-com-3c039.netlify.app/"><input type="image" src="./image/link.png" height="40"
-                            width="40" /></a>
-                <p><span>Tech Stack:</span> HTML | CSS | JavaScript |  React | Express | Node | Socket.io</p>
+                <div class="project-links">
+                <a href="https://github.com/anikethbr/Web-Chat"><input type="image" src="./image/GitHub.png" height="40"
+                        width="40" /></a>&emsp;
+                <a href="https://super-cool-site-by-anikethbr73-gmail-com-3c039.netlify.app/"><input type="image"
+                        src="./image/link.png" height="40" width="40" /></a></div>
+                <p><span>Tech Stack:</span> HTML | CSS | JavaScript | React | Express | Node | Socket.io</p>
             </div>
 
         </div>
     </section>
     <script src="https://kit.fontawesome.com/a4e2abdcac.js" crossorigin="anonymous"></script>
-    <script src="./js/script.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
 </body>
-<hr class="last-hr">
+
 <footer id="footer">
     <div>
-        <table cellspacing="30">
+        <table>
             <tr>
                 <td><a href="https://github.com/anikethbr"><i class="social-icon fab fa-github"></i></a></td>
                 <td><a href="https://twitter.com/Aniketh_2002"><i class="social-icon fab fa-twitter"></i></a></td>
@@ -260,7 +292,9 @@
                 <td><a href="mailto:anikethbr73@gmail.com"><i class="social-icon fas fa-envelope"></i></a></td>
             </tr>
         </table>
-        <p class="cpy">©Copyright Aniketh B R <script>document.write(getDate());</script></p>
+        <p class="cpy">©Copyright Aniketh B R
+            <script>document.write(getDate());</script>
+        </p>
     </div>
 </footer>
 

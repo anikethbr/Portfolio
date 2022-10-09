@@ -1,173 +1,120 @@
-html,body{
-    margin: 0;
-    padding: 0;
-    /* background-color: black; */
-    background: linear-gradient(90deg, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 500% 500%;
-	animation: gradient 15s ease infinite;
-	height: 280vh;
+/******************************** NavBar ********************************/
+.navbar{
+    box-shadow: 0.5px 0.5px 10px rgb(123, 122, 122);
 }
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-/*===========================  NAV =====================================*/
-nav{
-    /* height: 65px; */
-    width: 100%;
-    /* position:sticky; */
-    position: fixed;
-    top: 0;
-}
-article{
-    /* height: 65px; */
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    padding: 2% 0;
-}
-.nav-item{
-    flex: 1;
-    text-align: center;
-    font-size: 25px;
-    font-family: sans-serif;
-    /* text-shadow: 2px 2px  rgb(157, 53, 237); */
-}
-.nav-item:hover{
-    transition-delay: 0.5s;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    font-size: xx-large;
-}
-.nav-link{
-    text-decoration:none;
-    color: white;
-}
-/* .nav-link:hover{
-    color: rgb(2, 249, 183);
-    text-shadow: 0.5px 0.5px  white;
+/* body {
+  height: 2000px;
 } */
-.changeColor{
-    color: rgb(255, 255, 255);
+.navbar-name{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    font-weight: 900;
+    margin: 0%;
 }
-.sticky{
-    background: linear-gradient(-360deg, #23a6d5, #27e9e0);;
+.navbar-name-segment{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    color: #3f0071;
+    font-weight: 900;
+    margin: 0%;
 }
-
-
-
-/*===========================  MAIN =====================================*/
-#main{
-    margin: 15% 5% 5% 5%;
+.name{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    color: #3f0071;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    margin: 0%;
+}
+.navbar .navbar-brand {
+  font-size: 30px;
+}
+.navbar .nav-item {
+  padding: 10px 20px;
+}
+.navbar .nav-link {
+  font-size: 20px;
+  margin-left: 10px;
+  font-family: "Titillium Web", sans-serif;
+}
+.navbar .nav-link:hover {
+    color: #3f0071;
+    font-weight: 600;
+  }
+.fa-bars {
+  color: #000;
+  font-size: 30px;
+}
+/******************************** Home ********************************/
+#Home{
+    margin: 5% 10%;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
-    column-gap: 10px;
+    justify-content:space-evenly;
+    column-gap: 20px;
 }
+
 .pro-img{
-    height: 350px;
+    height: 300px;
     width: 100%;
-    /* border: 2px solid white; */
-    border: 6px solid #148cdc;
     border-radius: 50%;
 }
-.pro-img:hover{
+/* .pro-img:hover{
     border: 6px solid white;
-}
+} */
 .text-container{
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    row-gap: 0;
+    width: 530px;
+    /* row-gap: 0; */
 }
-.text-container>h1{
+.introduce{
     font-family: 'Poppins', sans-serif;
-    /* font-family: 'Sacramento',sans-serif; */
     padding: 0;
-    color: white;
-    text-shadow: 6px 6px  rgb(255, 23, 155);
-    /* color:#fd0963  #09fdd9*/
-    font-size: 100px;
-    font-weight: 900;
-    text-align: center;
-    /* text-shadow: 6px 6px  black; */
-    /* color: #e74581; */
-    /* color: #de6161; rgb(4, 247, 174) rgb(0, 255, 140) */
-    /* font-size: 72px;
-    background: -webkit-linear-gradient(#de6161,#2657eb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black; */
-    /* color: transparent;
-    text-align: center;
-    animation: effect 1s linear infinite; */
-    /* -webkit-text-stroke: 0.2px rgb(0, 80, 94); */
-    /* color: white; */
-    margin: 0%;
-}
-.text-container>h1:hover{
-    text-shadow: 6px 6px  rgb(157, 53, 237);
-}
-
-@keyframes effect {
-    0% {
-        background: linear-gradient(
-            #e74b1c, #005617, );
-        -webkit-background-clip: text;
-    }
-    25% {
-        background: linear-gradient(-45deg,
-        #f464ac,#79d3f1);
-        -webkit-background-clip: text;
-    }
-    50% {
-        background: linear-gradient(-45deg,
-        #f0a2c9,#10e48f);
-        -webkit-background-clip: text;
-    }
-
-    75% {
-        background: linear-gradient(-45deg,
-            #33ccff,  #ff99cc);
-        -webkit-background-clip: text;
-    }
-    100% {
-        background: linear-gradient(-45deg,
-            #f0f264,  #36c8f5);
-        -webkit-background-clip: text;
-    }
-}
-.text-container>h2{
-    font-family: 'Sacramento',cursive;
+    color: #000;
     font-size: 60px;
     font-weight: 900;
     text-align: center;
-    color: white;
+    margin: 0%;
+}
+.name{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    color: #3f0071;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    margin: 0%;
+}
+.description-txt{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    color: #000;
     margin: 0;
     padding:2% 0;
-    text-shadow: 3.5px 3.5px  rgb(48, 74, 244);
-
 }
-.text-container>h2:hover{
-    text-shadow: 2.5px 2.5px  rgb(53, 237, 176);
+.greet{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    color: #000;
+    margin: 0;
+    padding:2% 0;
 }
 hr{
-    height: 2px;
-    width: 30%;
-    background-color: aqua;
-    margin: 10% auto;
+    background-color: inherit;
+    border-style: none;
+    border-top-style: solid;
+    border-color:#3f0071;
+    border-width: 5px;
+    width: 10%;
+    margin: 0 45% 0 45%;
 }
 hr:hover{
     width: 80%;
@@ -182,33 +129,49 @@ hr:hover{
 .abt-description > p{
     font-family: 'Ubuntu',monospace;
     font-size: 25px;
-    font-weight: 600;
-    color: white;
+    font-weight: 300;
+    color: #000;
     letter-spacing: 1px;
     word-spacing: 0.5em;
 }
-input[name="resume"]{
-    height: 50px;
-    width: 50px;
+.resume{
+    display: flex;
+    /* align-content: start; */
+    /* align-items: start; */
+    justify-content: center;
+    margin: 5% 10%;
 }
 .res-txt{
     font-family: 'Ubuntu',sans-serif;
     font-size: 40px;
-    font-weight: 900;
-    color: white;
-    text-shadow: 2.5px 2.5px  rgb(67, 244, 120);
+    font-weight: 100;
+    color: #000;
 }
 .resume>p{
     text-align: center;
 }
-
+.res-link{
+    margin: 1%;
+}
+.res-dwnld{
+    /* margin-top: 0%; */
+    width: 220px;
+    padding: 3%;
+    font-size: 20px;
+    color: #fff;
+    background-color: #3f0071;
+}
+.res-dwnld:hover{
+    border: 1px solid #3f0071;
+    color: #3f0071;
+}
 /*===========================  SKILLS =====================================*/
 h3{
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
-    color: white;
-    font-size: 70px;
-    text-shadow: 4.5px 4.5px 4px rgb(246, 122, 21);
+    color: #000;
+    font-size: 48px;
+    /* text-shadow: 4.5px 4.5px 4px rgb(246, 122, 21); */
 }
 .cards{
     display: flex;
@@ -220,15 +183,15 @@ h3{
     display: flex;
     align-items: center;
     gap:20px;
-    /* border: 1px solid black; */
+    flex-direction: row;
+    border: none;
 }
 .img-card{
     height: 120px;
     width: fit-content;
 }
 /*Progress bar styling*/
-progress {
-    height: 25px;
+.percent {
     width: 300px;
 }
 
@@ -240,16 +203,16 @@ progress {
     justify-content: center;
     gap: 20px;
     row-gap: 30px;
+    margin: 3%;
 }
 .card2{
     padding: 30px;
-    color: white;
+    color: #000;
     align-items: center;
     text-align: center;
-    /* border: 1px solid black; */
-    height: 350px;
+    height: 490px;
     width: 480px;
-    border:4px solid aqua;
+    border:4px solid #000;
     border-radius: 20%;
 }
 .card2:hover{
@@ -257,52 +220,52 @@ progress {
     transition-delay: 0.5s;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
-    transform: rotate(10deg);
 }
 .card2>h1{
-    margin: 0;
+    margin: 3%;
     font-size: 2em;
-    font-family: 'Ubuntu', sans-serif;
-    text-shadow: 2.5px 2.5px 2px rgb(77, 11, 232);
+    font-family: 'Poppins', sans-serif;
+    color: #3f0071;
+    font-weight: 700;
+    /* text-shadow: 2.5px 2.5px 2px rgb(77, 11, 232); */
 }
 .card2 li{
     text-align: left;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 1.5em;
 }
 .card2 p{
     text-align: center;
     font-family: 'Merriweather', sans-serif;
-    font-weight: 700;
-    font-size: 1em;
+    font-weight: 400;
+    font-size: 1.2em;
     word-spacing: 1em;
+}
+.project-links{
+    margin: 1%;
 }
 .card2 span{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
     word-spacing: 0em;
 }
 /*=========================== FOOTER =================================*/
-.last-hr{
-    height: 2px;
-    width: 30%;
-    background-color: aqua;
-    margin: 5% auto;
-}
 footer{
     padding:5%;
     display: flex;
     justify-content: center;
+    background-color: #f8f1fe;
 }
 .cpy{
-    color: white;
+    margin-top: 15%;
+    color: #000;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 i{
-    color: white;
-    border: 1px solid white;
+    color: #000;
+    border: 1px solid #000;
     padding: 20px;
     border-radius: 50%;
 }
@@ -318,70 +281,112 @@ td:hover{
     transition-timing-function: ease-in-out; 
     transform: rotate(360deg);
 }
+
+td{
+    padding: 1em;
+    background-color:none;
+}
+
+#Home,#about,#skills,#projects{
+    margin-bottom: 10%;
+}
 /*=========================== RESPONSIVE =================================*/
 @media screen and (max-width: 513px){
-    /* html,body{
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background-size: 100% 100%;
-        animation: gradient 15s ease infinite;
-        height: 280vh;
-    } */
-    article{
-        padding: 5% 0;
+    .navbar{
+        height: fit-content;
     }
-    progress{
-        height: 25px;
-        width: 200px;
-    }
-    .nav-item{
-        font-size: 18px;
-    }
-    .nav-item:hover{
-        font-size: 20px;
-    }
+    .navbar .navbar-brand {
+        font-size: 15px;
+      }
+      .navbar .nav-item {
+        padding: 5px 10px;
+      }
+      .navbar .nav-link {
+        font-size: 15px;
+        margin-left: 10px;
+        font-family: "Titillium Web", sans-serif;
+      }
+      .fa-bars {
+        color: #000;
+        font-size: 15px;
+        padding: 0%;
+        border: none;
+      }
+
     .pro-img{
-        height: 200px;
+        height: 150px;
         width: 100%;
     }
-    .text-container>h1{
-        font-size: 60px;
-        text-shadow: 3px 3px  rgb(255, 23, 155);
-
+    .text-container{
+        margin: 0% 2%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
-    .text-container>h2{
-        font-size: 40px;
-        text-shadow: 2.5px 2.5px  rgb(48, 74, 244);
+    .introduce{
+        font-size: 30px;
     }
-
+    .name{
+        font-size: 30px;
+    }
+    .description-txt{
+        font-size: 20px;
+        overflow:unset;
+        justify-content: flex-start;
+        align-content: flex-start;
+        text-align: left;
+    }
+    .greet{
+        font-size: 20px;
+    }
     h3{
-        font-size: 40px;
-        text-shadow: 2.5px 2.5px 2px rgb(246, 122, 21);
+        font-size: 25px;
     }
-
     .abt-description > p{
         font-size: 18px;
     }
-
     .res-txt{
-        font-size: 25px;
-        text-shadow: 1.5px 1.5px  rgb(67, 244, 120);
+        font-size: 20px;
     }
-
-    input[name="resume"]{
-        height: 30px;
-        width: 30px;
+    .res-dwnld{
+        width: 120px;
+        padding: 2%;
+        font-size: 16px;
     }
-
-    .img-card{
+   .img-card{
         height: 80px;
         width: fit-content;
+    }
+    .percent {
+        height: 10px;
+        width: 200px;
+    }
+    .cards1{
+        height: min-content;
+    }
+    .card2>h1{
+        margin: 3%;
+        font-size: 1.6em;
+    }
+    .card2 li{
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+    .card2 p{
+        font-size: 1.0em;
+        word-spacing: 0.5em;
+    }
+    td{
+        padding: 0.5em;
     }
 }
 
 
 
 
-@media screen and (max-width: 449px){
+/* @media screen and (max-width: 449px){
     .card2{
 
         height: 380px;
@@ -389,9 +394,6 @@ td:hover{
     }
 }
 @media screen and (max-width: 627px){
-    article{
-        width: 100%;
-    }
     #projects{
         margin: 0 5%;
     }
@@ -403,16 +405,4 @@ td:hover{
     #main,#skills,#projects,#about{
         margin-bottom: 170px;
     }
-}
-
-/* @media screen and (max-width: 1115px){
-    html,body{
-        height: 350vh;
-    }
-}
-@media screen and (max-width: 960px){
-    html,body{
-        height: 400vh;
-    }
-}
- */
+} */
