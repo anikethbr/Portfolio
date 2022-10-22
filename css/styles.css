@@ -114,7 +114,7 @@ hr{
     border-color:#3f0071;
     border-width: 5px;
     width: 10%;
-    margin: 0 45% 0 45%;
+    margin: 0 45% 5% 45%;
 }
 hr:hover{
     width: 80%;
@@ -329,6 +329,10 @@ td{
     .name{
         font-size: 30px;
     }
+    .abt-description > p{
+        letter-spacing: 0.5px;
+        word-spacing: 0.2em;
+    }
     .description-txt{
         font-size: 20px;
         overflow:unset;
@@ -340,7 +344,7 @@ td{
         font-size: 20px;
     }
     h3{
-        font-size: 25px;
+        font-size: 35px;
     }
     .abt-description > p{
         font-size: 18px;
@@ -380,6 +384,10 @@ td{
     }
     td{
         padding: 0.5em;
+    }
+    hr{
+        width: 20%;
+        margin: 0 40% 10% 40%;
     }
 }
 
