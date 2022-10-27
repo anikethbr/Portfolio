@@ -116,11 +116,9 @@ hr{
     width: 10%;
     margin: 0 45% 5% 45%;
 }
-hr:hover{
-    width: 80%;
-    transition-delay: 0.5s;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
+.typing{
+    color:#3f0071;
+    font-weight: 400;
 }
 /*===========================  ABOUT =====================================*/
 .abt-description{
@@ -327,7 +325,7 @@ td{
         font-size: 30px;
     }
     .name{
-        font-size: 30px;
+        font-size: 40px;
     }
     .abt-description > p{
         letter-spacing: 0.5px;
@@ -341,7 +339,7 @@ td{
         text-align: left;
     }
     .greet{
-        font-size: 20px;
+        font-size: 30px;
     }
     h3{
         font-size: 35px;
