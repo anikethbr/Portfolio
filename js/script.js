@@ -27,7 +27,8 @@ $( ".d-l-btn" ).on("click", function() {
         $("hr").css("border-color", "#c06eff ");
         $(".card").css("background-color", "#121212");
         $(".res-txt").css("color", "white");
-        $(".progress-bar").css("background-color","#c06eff ");
+        $(".res-dwnld").css("background-color", "#c06eff");
+        $(".progress-bar").css("background-color","#c06eff");
         $("p").css("color", "white");
         $("h1").css("color", "#c06eff");
         $(".introduce").css("color", "#fff");
