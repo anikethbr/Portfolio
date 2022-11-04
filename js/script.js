@@ -36,7 +36,7 @@ $( ".d-l-btn" ).on("click", function() {
         $("li").css("color", "white");
         $("i").css("color", "white");
         $("i").css("border-color", "white");
-        $(".card2").css("border-color", "rgb(94, 0, 217)");
+        $(".card2").css("border-color", "#c06eff");
         $("footer").css("background-color","#1d0033");
 
     }
