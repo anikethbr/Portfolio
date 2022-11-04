@@ -1,6 +1,8 @@
 /******************************** NavBar ********************************/
 .navbar{
     box-shadow: 0.5px 0.5px 10px rgb(123, 122, 122);
+    /* position: relative;
+    z-index: 0; */
 }
 /* body {
   height: 2000px;
@@ -9,7 +11,8 @@
     font-family: 'Poppins', sans-serif;
     padding: 0;
     font-weight: 900;
-    margin: 0%;
+    /* margin: 0%; */
+    margin-left: 12% !important;
 }
 .navbar-name-segment{
     font-family: 'Poppins', sans-serif;
@@ -25,7 +28,6 @@
     font-size: 60px;
     font-weight: 900;
     text-align: center;
-    margin: 0%;
 }
 .navbar .navbar-brand {
   font-size: 30px;
@@ -45,6 +47,23 @@
 .fa-bars {
   color: #000;
   font-size: 30px;
+}
+.d-l-btn{
+    /* position: absolute;
+    z-index: 1; */
+    margin: 0%;
+    /* right: 0; */
+}
+.d-l-btn>i{
+    float: right;
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+
+.dark{
+    background-color: #121212;
 }
 /******************************** Home ********************************/
 #Home{
@@ -74,7 +93,6 @@
 .introduce{
     font-family: 'Poppins', sans-serif;
     padding: 0;
-    color: #000;
     font-size: 60px;
     font-weight: 900;
     text-align: center;
@@ -261,17 +279,17 @@ footer{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-i{
+.social-icon{
     color: #000;
     border: 1px solid #000;
     padding: 20px;
     border-radius: 50%;
 }
-i:hover{
+.social-icon:hover{
     transition-delay: 0s;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out; 
-    transform: scale(1.9);
+    transform: scale(1.2);
 }
 td:hover{
     transition-delay: 0s;
@@ -304,13 +322,15 @@ td{
         margin-left: 10px;
         font-family: "Titillium Web", sans-serif;
       }
-      .fa-bars {
+      /* .social-icon {
         color: #000;
         font-size: 15px;
         padding: 0%;
         border: none;
+      } */
+      .d-l-btn>i{
+        padding: 10px;
       }
-
     .pro-img{
         height: 150px;
         width: 100%;
@@ -389,9 +409,11 @@ td{
     }
 }
 
-
-
-
+/* @media screen and (max-width: 993px){
+    .container{
+        
+    }
+} */
 /* @media screen and (max-width: 449px){
     .card2{
 
