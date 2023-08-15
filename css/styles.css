@@ -392,22 +392,22 @@ td{
         word-spacing: 0.5em;
     }
     .exp-head1{
-        font-size: 18px;
+        font-size: 30px;
         font-weight: 600;
         margin-bottom: 5%;
     }
     .exp-head2{
-        font-size: 15px;
+        font-size: 25px;
         font-weight: 500;
     }
     .exp-description{
         font-family: 'IBM Plex Sans',monospace;
-        font-size: 12px;
+        font-size: 22px;
         font-weight: 400;
     }
     .exp-skills{
         font-family: 'IBM Plex Sans',monospace;
-        font-size: 10px;
+        font-size: 20px;
         font-weight: 300;
     }
     .exp-skills > span{
