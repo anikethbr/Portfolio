@@ -385,19 +385,19 @@ td{
     }
     .exp{
         /* border: 1px solid black; */
-        width: max-content;
+        width: fit-content;
         font-family: 'IBM Plex Sans',monospace;
         color: #000;
         letter-spacing: 1px;
         word-spacing: 0.5em;
     }
     .exp-head1{
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 600;
         margin-bottom: 5%;
     }
     .exp-head2{
-        font-size: 25px;
+        font-size: 22px;
         font-weight: 500;
     }
     .exp-description{
