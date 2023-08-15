@@ -181,6 +181,68 @@ hr{
     border: 1px solid #3f0071;
     color: #3f0071;
 }
+/*===========================  EXPERIENCE =====================================*/
+.cards-col{
+    border-left: 6px solid #3f0071;    
+    flex-direction: column ;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 0 auto;
+    /* position: relative; */
+}
+.card-col{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0% 0% 0% 5%;
+    align-items: left;
+    justify-content: left;
+    width: fit-content;
+    flex-direction: column;
+    /* float: right; */
+}
+/* .test{
+    border: 1px solid black;
+} */
+.vl{
+    border-left: 6px solid green;
+    height: 100vh;
+    float: left ;
+    position: absolute;
+    z-index: -1;
+    width: 2%;
+}
+.exp{
+    /* border: 1px solid black; */
+    width: max-content;
+    font-family: 'IBM Plex Sans',monospace;
+    color: #000;
+    letter-spacing: 1px;
+    word-spacing: 0.5em;
+}
+.exp-head1{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+.exp-head2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.exp-description{
+    font-family: 'IBM Plex Sans',monospace;
+    font-size: 25px;
+    font-weight: 400;
+}
+.exp-skills{
+    font-family: 'IBM Plex Sans',monospace;
+    font-size: 25px;
+    font-weight: 300;
+}
+.exp-skills > span{
+    font-weight: bolder;
+}
+
 /*===========================  SKILLS =====================================*/
 h3{
     text-align: center;
@@ -229,7 +291,7 @@ h3{
     height: 490px;
     width: 480px;
     border:4px solid #000;
-    border-radius: 20%;
+    /* border-radius: 0%; */
 }
 .card2:hover{
     border:4px solid rgb(94, 0, 217);
@@ -308,6 +370,54 @@ td{
 }
 /*=========================== RESPONSIVE =================================*/
 @media screen and (max-width: 513px){
+    .cards-col{
+        width: fit-content;
+        margin: 0 auto 5% auto;
+        border-left: 3px solid #3f0071;
+    }
+    .vl{
+        border-left: 1px solid green;
+        height: 1vh;
+        float: left ;
+        position: absolute;
+        z-index: -1;
+        width: 2%;
+    }
+    .exp{
+        /* border: 1px solid black; */
+        width: max-content;
+        font-family: 'IBM Plex Sans',monospace;
+        color: #000;
+        letter-spacing: 1px;
+        word-spacing: 0.5em;
+    }
+    .exp-head1{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5%;
+    }
+    .exp-head2{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .exp-description{
+        font-family: 'IBM Plex Sans',monospace;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .exp-skills{
+        font-family: 'IBM Plex Sans',monospace;
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .exp-skills > span{
+        font-weight: bolder;
+    }
+
+
+
+
+
     .navbar{
         height: fit-content;
     }

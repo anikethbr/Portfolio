@@ -22,6 +22,7 @@ $( ".d-l-btn" ).on("click", function() {
         $(".navbar-name").css("color", "#fff");
         $(".navbar-name-segment").css("color", "#c06eff ");
         $(".nav-link").css("color", "#fff");
+        $(".exp").css("color","#fff");
         $(".name").css("color", "#c06eff");
         $(".typing").css("color", "#c06eff ");
         $("hr").css("border-color", "#c06eff ");
@@ -39,7 +40,6 @@ $( ".d-l-btn" ).on("click", function() {
         $("i").css("border-color", "white");
         $(".card2").css("border-color", "#c06eff");
         $("footer").css("background-color","#1d0033");
-
     }
 });
 function getDate(){
