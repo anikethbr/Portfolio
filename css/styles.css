@@ -371,7 +371,7 @@ td{
 /*=========================== RESPONSIVE =================================*/
 @media screen and (max-width: 513px){
     .cards-col{
-        width: fit-content;
+        width: 95%;
         margin: 0 auto 5% auto;
         border-left: 3px solid #3f0071;
     }
